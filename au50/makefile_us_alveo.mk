@@ -44,9 +44,9 @@ endif
 
 ############################## Setting up Project Variables ##############################
 addrndm := 0
-krnl_loop := 1
+krnl_loop := 100
 txSize   := 64
-dsize    := 512
+dsize    := 16
 dwords   := $(dsize)/32
 bl       := $(txSize)*8/$(dsize)
 
@@ -135,15 +135,15 @@ ifeq ($(TARGET),$(filter $(TARGET),sw_emu hw_emu))
 	cp -rf $(EMCONFIG_DIR)/emconfig.json .
 	XCL_EMULATION_MODE=$(TARGET) ./$(EXECUTABLE) $(CMD_ARGS) $(dsize) $(addrndm) $(krnl_loop) $(txSize)
 else
-	$(EXECUTABLE) $(CMD_ARGS)  $(dsize) $(addrndm) $(krnl_loop) $(txSize)
+	./$(EXECUTABLE) $(CMD_ARGS)  $(dsize) $(addrndm) $(krnl_loop) $(txSize)
 endif
 
 .PHONY: test
 test: $(EXECUTABLE)
 ifeq ($(TARGET),$(filter $(TARGET),sw_emu hw_emu))
-	XCL_EMULATION_MODE=$(TARGET) $(EXECUTABLE) $(CMD_ARGS)
+	XCL_EMULATION_MODE=$(TARGET) ./$(EXECUTABLE) $(CMD_ARGS)
 else
-	$(EXECUTABLE) $(CMD_ARGS)
+	./$(EXECUTABLE) $(CMD_ARGS)
 endif
 
 ############################## Cleaning Rules ##############################
