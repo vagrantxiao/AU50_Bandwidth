@@ -8,4 +8,7 @@ Go to <ROOT>/au50 and execute build.sh. You can get results as below.
 
 ![](images/init_run.png)
 
+Open '''makefile_us_alveo.mk''', you can change the txSize and dsize. '''dsize''' represents the size of the data we will transmit between host and fabric.
 
+![](images/makefile.png)
+  
