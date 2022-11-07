@@ -55,7 +55,7 @@ void increment(
 // in running states.
 #pragma HLS interface ap_ctrl_none port = return
 
-#pragma DATAFLOW
+#pragma HLS dataflow
 
     for(int i=0; i<CONFIG_SIZE; i++){
 #pragma HLS PIPELINE II=1

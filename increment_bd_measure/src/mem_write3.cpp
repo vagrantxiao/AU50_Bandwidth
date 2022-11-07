@@ -19,8 +19,10 @@
 
 extern "C" {
 void mem_write3(hls::stream<ap_axiu<32, 0, 0, 0> >& stream, ap_uint<32> * mem, int size) {
+#pragma HLS INTERFACE m_axi port=mem bundle=aximm3
 mem_write3:
     for (int i = 0; i < size; i++) {
+#pragma HLS PIPELINE II=1
         ap_axiu<32, 0, 0, 0> v = stream.read();
         mem[i] = v.data;
     }

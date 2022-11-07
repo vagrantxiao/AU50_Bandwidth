@@ -19,8 +19,10 @@
 
 extern "C" {
 void mem_read1(ap_uint<64> * mem, hls::stream<ap_axiu<64, 0, 0, 0> >& stream, int size) {
+#pragma HLS INTERFACE m_axi port=mem bundle=aximm1
 mem_read1:
     for (int i = 0; i < size; i++) {
+#pragma HLS PIPELINE II=1
         ap_uint<64> a = mem[i];
         ap_axiu<64, 0, 0, 0> v;
         v.data = a;
