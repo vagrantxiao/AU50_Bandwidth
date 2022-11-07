@@ -118,8 +118,8 @@ $(TEMP_DIR)/vadd.xo:  $(OPERATORS_SRC)
 
 $(BUILD_DIR)/vadd.xclbin: $(TEMP_DIR)/vadd.xo
 	mkdir -p $(BUILD_DIR)
-	v++ $(VPP_FLAGS) -l $(VPP_LDFLAGS) --temp_dir $(TEMP_DIR) $(VPP_LDFLAGS_vadd) --vivado.synth.jobs $(shell nproc) --vivado.impl.jobs -o'$(LINK_OUTPUT)' $(+)
-	v++ -p $(LINK_OUTPUT) $(VPP_FLAGS) --package.out_dir $(PACKAGE_OUT) --vivado.synth.jobs $(shell nproc) --vivado.impl.jobs -o $(BUILD_DIR)/vadd.xclbin
+	v++ $(VPP_FLAGS) -l $(VPP_LDFLAGS) --temp_dir $(TEMP_DIR) $(VPP_LDFLAGS_vadd) --vivado.synth.jobs $(shell nproc) --vivado.impl.jobs $(shell nproc) -o'$(LINK_OUTPUT)' $(+)
+	v++ -p $(LINK_OUTPUT) $(VPP_FLAGS) --package.out_dir $(PACKAGE_OUT) --vivado.synth.jobs $(shell nproc) --vivado.impl.jobs $(shell nproc) -o $(BUILD_DIR)/vadd.xclbin
 
 ############################## Setting Rules for Host (Building Host Executable) ##############################
 $(EXECUTABLE): $(HOST_SRCS) | check-xrt
