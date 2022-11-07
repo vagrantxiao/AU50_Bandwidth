@@ -90,9 +90,9 @@ void vadd(
         const unsigned int kernel_loop,  // Running the same kernel operations kernel_loop times
         bool addRandom                 // Address Pattern is random
         ) {
-#pragma HLS INTERFACE m_axi port = in1 offset = slave bundle = gmem0 latency = 300 num_read_outstanding = 128 num_write_outstanding=1
-#pragma HLS INTERFACE m_axi port = in2 offset = slave bundle = gmem1 latency = 300 num_read_outstanding = 128 num_write_outstanding=1
-#pragma HLS INTERFACE m_axi port = out offset = slave bundle = gmem2 latency = 50  num_write_outstanding= 128 num_read_outstanding=1
+#pragma HLS INTERFACE m_axi port = in1 offset = slave bundle = gmem0 latency = 300 num_read_outstanding = 32 num_write_outstanding=1
+#pragma HLS INTERFACE m_axi port = in2 offset = slave bundle = gmem1 latency = 300 num_read_outstanding = 32 num_write_outstanding=1
+#pragma HLS INTERFACE m_axi port = out offset = slave bundle = gmem2 latency = 50  num_write_outstanding= 32 num_read_outstanding=1
 
     // dsize is a multiple of 16, even 1024, VDATA_SIZE is power of 2
     unsigned int vSize = dsize / VDATA_SIZE;
