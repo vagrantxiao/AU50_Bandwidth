@@ -27,7 +27,12 @@ Table 1: Throughput Measurement for vadd
 
 # 2. ydma_bd_measure
 
-The throughput for ydma kernel
+## Compile Step
+
+Go to [\<ROOT\>/ydma_bd_measure/au50](ydma_bd_measure/au50/) and execute build.sh.
+
+## Bandwidth Measurement
+The throughput for ydma kernel. You can change the '''SIZE_MB''' macro to in [host.cpp](ydma_bd_measure/src/host.cpp) for different transmission size.
  
 Table 2: Throughput Measurement for ydma
 |**SIZE_MB (MB)**|**Throughput (GB/s)**|
