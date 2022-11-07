@@ -12,3 +12,9 @@ Open '''makefile_us_alveo.mk''', you can change the txSize and dsize. '''dsize''
 
 ![](images/makefile.png)
   
+Table 1: Throughput Measurement
+|  **krnl_loop** | **txSize**              |  **dsize**   |**Throughput**| **DSP**    | **URAM** |
+|:--------------:|:--------------------------:|:----------:|:--------:|:----------:|:--------:|
+|  10     | ![](./images/ultra96_1.png)| 79,024     | 322      | 598        | 28       |
+|  10      | ![](./images/zcu102_1.png) | 235,200    | 924      | 1,716      | 88       |
+|  10      | ![](./images/zcu102_2.png) | 231,600    | 852      | 1,704      | 192      |
