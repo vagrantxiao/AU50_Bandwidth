@@ -62,7 +62,7 @@ Table 2: Throughput Measurement for ydma
 |  16            |                     |
 |  64            |                     |
 |  256           |                     |
-|  512           |1417                 |
+|  512           |1.417                |
 |  1024          |                     |
 
 ## 3.3 HiPR Bandwidth Measurement
