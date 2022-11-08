@@ -35,18 +35,37 @@ Go to [\<ROOT\>/ydma_bd_measure/au50](ydma_bd_measure/au50/) and execute build.s
 The throughput for ydma kernel. You can change the '''SIZE_MB''' macro to in [host.cpp](ydma_bd_measure/src/host.cpp) for different transmission size.
  
 Table 2: Throughput Measurement for ydma
-|**SIZE_MB (MB)**|**Throughput**|
-|:--------------:|:------------:|
-|  1             |3350 MB/s     |
-|  10            |5708 MB/s     |
-|  16            |5915 MB/s     |
-|  64            |6303 MB/s     |
-|  256           |10097 MB/s    |
-|  512           |      |
+|**SIZE_MB (MB)**|**Throughput (GB/s)**|
+|:--------------:|:-------------------:|
+|  1             |3.350                |
+|  10            |5.708                |
+|  16            |5.915                |
+|  64            |6.303                |
+|  256           |10.093               |
+|  512           |10.173               |
+|  1024          |10.204               |
+
+# 3. increment_bd_measure
+
+## Compile Step
+
+Go to [\<ROOT\>/increment_bd_measure/au50](increment_bd_measure/au50/) and execute build.sh.
+
+## Bandwidth Measurement
+The throughput for ydma kernel. You can change the '''SIZE_MB''' macro to in [typedefs.h](increment_bd_measure/src/typedefs.h) for different transmission size.
+ 
+Table 2: Throughput Measurement for ydma
+|**SIZE_MB (MB)**|**Throughput (GB/s)**|
+|:--------------:|:-------------------:|
+|  1             |0.913                |
+|  10            |               |
+|  16            |               |
+|  64            |               |
+|  256           |            |
+|  512           |              |
 |  1024          |      |
 
-
-# 3. hipr_bd_measure
+# 4. hipr_bd_measure
 
 ## Bandwidth Measurement
 The throughput for ydma kernel. You can change the '''SIZE_MB''' macro to in [host.cpp](ydma_bd_measure/src/host.cpp) for different transmission size.
