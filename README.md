@@ -58,12 +58,12 @@ Table 2: Throughput Measurement for ydma
 |**SIZE_MB (MB)**|**Throughput (GB/s)**|
 |:--------------:|:-------------------:|
 |  1             |0.913                |
-|  10            |               |
-|  16            |               |
-|  64            |               |
-|  256           |            |
-|  512           |              |
-|  1024          |      |
+|  10            |                     |
+|  16            |                     |
+|  64            |                     |
+|  256           |                     |
+|  512           |1417                 |
+|  1024          |                     |
 
 ## 3.3 HiPR Bandwidth Measurement
 The throughput for ydma kernel. You can change the '''SIZE_MB''' macro to in [host.cpp](ydma_bd_measure/src/host.cpp) for different transmission size.
@@ -71,7 +71,7 @@ The throughput for ydma kernel. You can change the '''SIZE_MB''' macro to in [ho
 Table 2: Throughput Measurement for ydma
 |**SIZE_MB (MB)**|**Throughput (GB/s)**|
 |:--------------:|:-------------------:|
-|  1             |0.913                |
+|  1             |             |
 |  10            |               |
 |  16            |               |
 |  64            |               |
