@@ -1,9 +1,9 @@
 # 1. vitis_bd_measure
 
-## REPO TARGET
+## 1.1 REPO TARGET
 This repo is a part from [Xilinx Vitis Tutorial](https://github.com/Xilinx/Vitis-Tutorials/blob/2022.1/Hardware_Acceleration/Feature_Tutorials/07-using-hbm/3_BW_Explorations.md). The goal of this repo is to show the bandwidth we can get with different transaction size.
 
-## Compile Step
+## 1.2 Compile Step
 Go to [\<ROOT\>/vitis_bd_measure/au50](vitis_bd_measure/au50) and execute build.sh. You can get results as below.
 
 ![](images/init_run.png)
@@ -27,11 +27,11 @@ Table 1: Throughput Measurement for vadd
 
 # 2. ydma_bd_measure
 
-## Compile Step
+## 2.1 Compile Step
 
 Go to [\<ROOT\>/ydma_bd_measure/au50](ydma_bd_measure/au50/) and execute build.sh.
 
-## Bandwidth Measurement
+## 2.2 Bandwidth Measurement
 The throughput for ydma kernel. You can change the '''SIZE_MB''' macro to in [host.cpp](ydma_bd_measure/src/host.cpp) for different transmission size.
  
 Table 2: Throughput Measurement for ydma
@@ -44,6 +44,22 @@ Table 2: Throughput Measurement for ydma
 |  256           |10.093               |
 |  512           |10.173               |
 |  1024          |10.204               |
+
+## 2.3 HiPR Bandwidth Measurement
+The throughput for ydma kernel. You can change the '''SIZE_MB''' macro to in [host.cpp](ydma_bd_measure/src/host.cpp) for different transmission size.
+ 
+Table 2: Throughput Measurement for ydma
+|**SIZE_MB (MB)**|**Throughput (GB/s)**|
+|:--------------:|:-------------------:|
+|  1             |                |
+|  10            |                |
+|  16            |                |
+|  64            |                |
+|  256           |                |
+|  512           |                |
+|  1024          |                |
+|  4096          |                |
+
 
 # 3. increment_bd_measure
 
