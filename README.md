@@ -47,11 +47,11 @@ Table 2: Throughput Measurement for ydma
 
 # 3. increment_bd_measure
 
-## Compile Step
+## 3.1 Compile Step
 
 Go to [\<ROOT\>/increment_bd_measure/au50](increment_bd_measure/au50/) and execute build.sh.
 
-## Raw Bandwidth Measurement
+## 3.2 Raw Bandwidth Measurement
 The throughput for ydma kernel. You can change the '''SIZE_MB''' macro to in [typedefs.h](increment_bd_measure/src/typedefs.h) for different transmission size.
  
 Table 2: Throughput Measurement for ydma
@@ -65,7 +65,7 @@ Table 2: Throughput Measurement for ydma
 |  512           |              |
 |  1024          |      |
 
-## HiPR Bandwidth Measurement
+## 3.3 HiPR Bandwidth Measurement
 The throughput for ydma kernel. You can change the '''SIZE_MB''' macro to in [host.cpp](ydma_bd_measure/src/host.cpp) for different transmission size.
  
 Table 2: Throughput Measurement for ydma
