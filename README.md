@@ -82,6 +82,7 @@ Table 2: Throughput Measurement for ydma
 
 ## 3.3 HiPR Bandwidth Measurement
 The throughput for ydma kernel. You can change the '''SIZE_MB''' macro to in [host.cpp](ydma_bd_measure/src/host.cpp) for different transmission size.
+ We should use host.cpp similar to ydma case to make sure the throughput can reach 10GB/s.
  
 Table 2: Throughput Measurement for ydma
 |**SIZE_MB (MB)**|**Throughput (GB/s)**|
