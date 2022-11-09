@@ -58,7 +58,7 @@ Table 2: Throughput Measurement for ydma
 |  256           |                |
 |  512           |                |
 |  1024          |                |
-|  4096          |                |
+|  2048          |                |
 
 
 # 3. increment_bd_measure
@@ -94,7 +94,7 @@ Table 2: Throughput Measurement for ydma
 |  256           |1.396                |
 |  512           |1.409                |
 |  1024          |1.412                |
-|  4096          |1.401                |
+|  2048          |1.401                |
 
 
 
