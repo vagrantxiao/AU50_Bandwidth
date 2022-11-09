@@ -51,14 +51,14 @@ The throughput for ydma kernel. You can change the '''SIZE_MB''' macro to in [ho
 Table 2: Throughput Measurement for ydma
 |**SIZE_MB (MB)**|**Throughput (GB/s)**|
 |:--------------:|:-------------------:|
-|  1             |                |
-|  10            |                |
-|  16            |                |
-|  64            |                |
-|  256           |                |
-|  512           |                |
-|  1024          |                |
-|  2048          |                |
+|  1             | 0.438               |
+|  10            | 0.491               |
+|  16            | 0.494               |
+|  64            | 0.504               |
+|  256           | 0.523               |
+|  512           | 0.525               |
+|  1024          | 0.523               |
+|  2048          | 0.523               |
 
 
 # 3. increment_bd_measure
